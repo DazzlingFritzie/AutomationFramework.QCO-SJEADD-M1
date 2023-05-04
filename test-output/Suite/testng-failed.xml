@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="vTiger.GenericUtilities.ListenersImplementationClass"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="SmokeSuite"/>
+      </run>
+    </groups>
     <classes>
-      <class name="vTiger.ContactsTests.CreateContactWithOrganizationTest">
-        <methods>
-          <include name="bmConfig"/>
-          <include name="createContactOrgTest"/>
-          <include name="amConfig"/>
-          <include name="bcConfig"/>
-          <include name="bsconfig"/>
-          <include name="acConfig"/>
-          <include name="asconfig"/>
-        </methods>
-      </class> <!-- vTiger.ContactsTests.CreateContactWithOrganizationTest -->
       <class name="vTiger.OrganizationsTests.CreateNewOrganizationTest">
         <methods>
           <include name="bmConfig"/>
@@ -26,7 +17,6 @@
           <include name="acConfig"/>
           <include name="asconfig"/>
           <include name="createNewOrgTest"/>
-          <include name="demoOrg"/>
         </methods>
       </class> <!-- vTiger.OrganizationsTests.CreateNewOrganizationTest -->
     </classes>

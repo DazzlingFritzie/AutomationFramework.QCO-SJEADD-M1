@@ -54,10 +54,10 @@ public class BaseClass {
 		}
 		else if(BROWSER.equalsIgnoreCase("Edge"))
 		{
-			EdgeOptions opt = new EdgeOptions();
-		    opt.addArguments("--remote-allow-origins=*");
+			//EdgeOptions opt = new EdgeOptions();
+		    //opt.addArguments("--remote-allow-origins=*");
 		    WebDriverManager.edgedriver().setup();
-		    driver = new EdgeDriver(opt); 
+		    driver = new EdgeDriver(); 
 			System.out.println(BROWSER+" --- Browser launch successful ---");
 		}
 		else
