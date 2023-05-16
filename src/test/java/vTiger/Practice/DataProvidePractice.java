@@ -15,7 +15,7 @@ public class DataProvidePractice
 	{                              //row//cell   
 		Object[][] data= new Object[5][3];
 		
-		data [0][0]="ParkAvenue";
+		data [0][0]="ParkAvenu";
 		data[0][1]= 4999;
 		data[0][2] = 28;
 
