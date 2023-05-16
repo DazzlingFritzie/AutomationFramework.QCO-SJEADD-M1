@@ -9,8 +9,8 @@ public class AssertionPractice
 public void assertPractice()
 {
 	System.out.println("Hi");
-	//if(1==1)
-	if(1==0)
+	if(1==1)
+	//if(1==0)
 	
 	{
 		System.out.println("Pass");
